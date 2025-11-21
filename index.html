@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAM Service IA – Automatisation & Intelligence Artificielle</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Inter", sans-serif;
+            background: #0d0d0d;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 30px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.6);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            backdrop-filter: blur(15px);
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        header nav a {
+            color: #fff;
+            margin-left: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+        header nav a:hover {
+            color: #00d1ff;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 0 20px;
+            background: linear-gradient(135deg, #001F3F, #00101a);
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin: 0;
+            animation: fadeIn 1.5s ease forwards;
+        }
+
+        .hero p {
+            max-width: 650px;
+            font-size: 18px;
+            margin-top: 20px;
+            opacity: 0;
+            animation: fadeIn 2s ease forwards;
+        }
+
+        .btn-primary {
+            margin-top: 30px;
+            padding: 15px 35px;
+            background: #00d1ff;
+            color: #000;
+            border-radius: 30px;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn-primary:hover {
+            background: #00a6cc;
+        }
+
+        .section {
+            padding: 100px 15%;
+            background: #0d0d0d;
+        }
+
+        .section h3 {
+            font-size: 32px;
+            margin-bottom: 30px;
+        }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            padding: 25px;
+            background: #111;
+            border-radius: 10px;
+            border: 1px solid #1f1f1f;
+            transition: 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-8px);
+            border-color: #00d1ff;
+        }
+
+        .footer {
+            background: #000;
+            padding: 40px;
+            text-align: center;
+            font-size: 14px;
+            color: #aaa;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: translateY(20px);}
+            to {opacity: 1; transform: translateY(0);}
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>SAM Service IA</h1>
+        <nav>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Automatisation & Intelligence Artificielle</h2>
+        <p>
+            SAM Service IA vous accompagne pour automatiser vos tâches, créer des systèmes intelligents
+            et optimiser votre productivité grâce à l’IA moderne et des workflows sur mesure.
+        </p>
+        <a class="btn-primary" href="#contact">Commencer maintenant</a>
+    </section>
+
+    <section class="section" id="services">
+        <h3>Nos Solutions d'Automatisation</h3>
+        <div class="services">
+            <div class="service-card">
+                <h4>Automatisation d'entreprise</h4>
+                <p>Optimisation complète de vos processus internes avec des outils low-code/no-code.</p>
+            </div>
+
+            <div class="service-card">
+                <h4>Agents IA personnalisés</h4>
+                <p>Création d’assistants intelligents pour gérer vos tâches, clients, données et emails.</p>
+            </div>
+
+            <div class="service-card">
+                <h4>Bots & Intégrations</h4>
+                <p>Développement de bots (WhatsApp, Telegram, web) et intégration API.</p>
+            </div>
+
+            <div class="service-card">
+                <h4>Workflows automatisés</h4>
+                <p>Création de workflows sur mesure (CRM, facturation, leads, support).</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <h3>Contact</h3>
+        <p>Prêt à automatiser votre business ? Contactez-nous :</p>
+        <p><strong>Email :</strong> contact@samserviceia.com</p>
+    </section>
+
+    <footer class="footer">
+        © 2025 SAM Service IA — Automatisation & Intelligence Artificielle
+    </footer>
+</body>
+</html>
